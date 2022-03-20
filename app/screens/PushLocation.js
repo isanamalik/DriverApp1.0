@@ -71,7 +71,7 @@ export default class PushLocation extends Component {
           </View>
           <TouchableOpacity>
 
-             <Button style={styles.button}  onPress={this.counter}>Start Drive</Button> 
+             <Button style={styles.button}  onPress={this.counter}>Start Driving</Button> 
         </TouchableOpacity>
       </View>
     );
@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
     cardInfo: {
     flex: 2,
     padding: 10,
-    borderColor: '#0d47a1',
+    borderColor: '#6B151B',
     borderWidth: 1,
   borderRadius: 8,
     backgroundColor: '#fff',
@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
   },
   cardTitle: {
     fontWeight: 'bold',
-    color: '#0d47a1',
+    color: '#6B151B',
      textDecorationLine: 'underline'
   },
   cardDetails: {

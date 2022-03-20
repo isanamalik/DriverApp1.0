@@ -35,7 +35,7 @@ const LandingScreen = ({ navigation }) => {
           <TouchableOpacity
           onPress={ () => navigation.navigate('LoginScreen') }
           >
-             <Button style={styles.button  } >Login</Button>
+             <Button style={styles.button  } >Start</Button>
           </TouchableOpacity>
         </View> 
       </View>
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#6B151B",
     // alignItems: 'center',
     padding: 10,
-  },
+  },  
   shadow: {
     shadowColor: "#000",
     shadowOffset: {
@@ -64,6 +64,8 @@ const styles = StyleSheet.create({
   button: {
     backgroundColor : "#FBA92B",
      color: COLORS.white,
+     width : 180,
+     borderRadius: 30
   }
 
 });

@@ -13,6 +13,7 @@ import axios from "axios";
 import { registrationNumberValidator, passwordValidator } from '../core/utils';
 import { Error } from '../components/Error';
 import { images } from '../constants';
+import { color } from 'react-native-reanimated';
 
 // const Tab = createMaterialTopTabNavigator();
 
@@ -75,7 +76,7 @@ const LoginUser = ({ navigation }) => {
             height: '25%',
           }}
         />
-        <Text>
+        <Text style= {{color : "#6B151B"}}>
           DRIVER LOGIN
             </Text>
                 <TextInput
@@ -85,6 +86,8 @@ const LoginUser = ({ navigation }) => {
                     onChangeText={text => setRegistrationNumber({ value: text, error: '' })}
                     error={!!registrationNumber.error}
                     errorText={registrationNumber.error}
+                    outlineColor="#6B151B"
+
                     
                 />
                 <TextInput
@@ -95,14 +98,14 @@ const LoginUser = ({ navigation }) => {
                     error={!!password.error}
                     errorText={password.error}
                     secureTextEntry
-                    outlineColor="#0d47a1"
+                    outlineColor="#6B151B"
                 />
 
                 <View style={styles.row}>
                     <Text style={styles.error}>{error}</Text>
                 </View>
                
-                <Button onPress={_onLoginPressed}>Login</Button>
+                <Button onPress={_onLoginPressed} >Login</Button>
 
             </View>
         <Loading loading={loading} />

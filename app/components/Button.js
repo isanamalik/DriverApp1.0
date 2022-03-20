@@ -20,7 +20,7 @@ const Button = ({ mode, style, children, ...props }) => (
 
 const styles = StyleSheet.create({
   button: {
-   backgroundColor: '#0d47a1', padding: 5, width:150, borderRadius: 30, marginHorizontal: 2 
+   backgroundColor: '#6B151B', padding: 5, width:320, borderRadius: 10, marginHorizontal: 2 
   },
   text: {
     textAlign: 'center', color: '#FFF', fontSize: 15
